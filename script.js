@@ -21,10 +21,13 @@ list.innerHTML = listItem
 */
 
 let i = 0
-let listItem = "<ul>"
+let listItem = "<ul class='list-group'>"
 while (i < shoppingList.length) {
     console.log(shoppingList[i])
-    listItem += `<li>${shoppingList[i]}</li>  `
+    listItem += `<li class='list-group-item'>
+                    <input class='form-check-input me-1' type='checkbox' value='' id='firstCheckbox'>
+                    ${shoppingList[i]}
+                </li>  `
     i++
 }
 listItem += "</ul>"
