@@ -10,6 +10,7 @@ Se abbiamo difficoltà con lo stampare in pagina, proviamo prima a stampare col 
 const list = document.getElementById("shopping-list")
 const shoppingList = ["latte", "uova", "pesce", "biscotti", "pane", "tonno", "prosciutto", "pasta"]
 
+/*
 let listItem = "<ul>"
 for (let i = 0 ; i < shoppingList.length; i++) {
     console.log (shoppingList[i])
@@ -17,10 +18,15 @@ for (let i = 0 ; i < shoppingList.length; i++) {
 }
 listItem += "</ul>"
 list.innerHTML = listItem
+*/
 
-/*let i = 0
+let i = 0
+let listItem = "<ul>"
 while (i < shoppingList.length) {
     console.log(shoppingList[i])
+    listItem += `<li>${shoppingList[i]}</li>  `
     i++
 }
-*/
+listItem += "</ul>"
+list.innerHTML = listItem
+
